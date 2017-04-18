@@ -13,10 +13,11 @@ h1{
 	align-content: center;
 	width: 100vw;
 	position: fixed;
-	background-color: #B9BECF;
+	background-color: #656871;
 	left: 0;
 	top: 0;
 	box-shadow: 0px 2px 2px #8C8C8C;
+	color: #FFFFFF;
 }
 
 .header h1{
@@ -30,24 +31,31 @@ h1{
 .search-form{
 	display: flex;
 	justify-content: flex-start;
-	background-color: rgba(0,0,0,.2);
+	background-color: #44464C;
     background-clip: padding-box;
     border: solid transparent;
     width: 40vw;
     padding: 0;
+    border: 0;
 }
 .search-bar{
- background-clip: padding-box;
- border: solid transparent;
-	width: 80%;
 	display: flex;
-	font-size: 2em;
-	background-color: #B9BECF;
-	height: 90%;
-	margin: 0;
-	margin-top: 5%
-	padding: 0;
-	border: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	font-size: 1.5em;
+	background-color: #44464C;
+	border: none;
+	color: white;
+	height: 80%;
+	width: 100%;
+}
+
+.search-bar:focus{
+	color: #000000;
+	background-color: #FFFFFF;
+	border: none;
+	border-color: none;
 }
 .card-container{
 	display: flex;
