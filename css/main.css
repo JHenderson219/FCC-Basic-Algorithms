@@ -9,7 +9,7 @@ h1{
 .header{
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-content: center;
 	width: 100vw;
 	position: fixed;
@@ -38,6 +38,7 @@ h1{
     padding: 0;
     border: 0;
     max-width: 650px;
+    height: 5vh;
 }
 .search-bar{
 	display: flex;
@@ -68,6 +69,7 @@ h1{
 	display: flex;
 	flex-flow: row wrap;
 	width: 90vw;
+	margin-top: 10vh;
 }
 
 .card{
@@ -75,6 +77,8 @@ h1{
 	display: flex;
 	flex-flow: column;
 	box-shadow: 0px 2px 2px #8C8C8C;
+	padding: 10px;
+	max-width: 375px;
 }
 .portfolio-img{
 	height: 100%;
@@ -89,4 +93,10 @@ h1{
 	border: none;
 	width: 5em;
 	border-radius: 2px;
+}
+
+@media(max-width: 700px){
+	.card-container{
+		flex-flow: column;
+	}
 }
