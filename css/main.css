@@ -34,16 +34,17 @@ h1{
 	background-color: #44464C;
     background-clip: padding-box;
     border: solid transparent;
-    width: 40vw;
+    width: 55vw;
     padding: 0;
     border: 0;
+    max-width: 650px;
 }
 .search-bar{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-self: center;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	background-color: #44464C;
 	border: none;
 	color: white;
@@ -57,6 +58,12 @@ h1{
 	border: none;
 	border-color: none;
 }
+.search-bar::placeholder{
+	color: #BABABA;
+}
+.search-bar:focus::placeholder{
+	color: grey;
+}
 .card-container{
 	display: flex;
 	flex-flow: row wrap;
@@ -67,4 +74,19 @@ h1{
 	background-color: #FFFFFF;
 	display: flex;
 	flex-flow: column;
+	box-shadow: 0px 2px 2px #8C8C8C;
+}
+.portfolio-img{
+	height: 100%;
+}
+
+.search-form:focus{
+	background-color: #FFFFFF;
+}
+
+.search-button{
+	background-color: inherit;
+	border: none;
+	width: 5em;
+	border-radius: 2px;
 }
